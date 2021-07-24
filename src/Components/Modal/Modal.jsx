@@ -1,4 +1,5 @@
-import {useEffect} from 'react';
+import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import s from '../Modal/Modal.module.css';
 import { createPortal } from 'react-dom';
 
@@ -36,3 +37,8 @@ function Modal({fullImg, onClick}) {
 }
 
 export default Modal;
+
+Modal.propTypes = {
+    fullImg: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired,
+}
