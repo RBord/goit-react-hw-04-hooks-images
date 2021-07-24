@@ -2,10 +2,6 @@ import React from 'react';
 import s from '../ImageGallery/ImageGallery.module.css';
 
 function ImageGallery ({images, onClick}) {
-    
-    
-        // const { images, onClick } = this.props;
-        
     return (
     <ul className={s.ImageGallery}>
         {images.map(({id, webformatURL}) => (
